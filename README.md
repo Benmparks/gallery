@@ -5,6 +5,8 @@ The concept of the project is to be able to drop image files into a folder, have
 where the images are linked in the gallery and using Fancybox displayed in the modal.  The thought process is to make it as portable as possible
 and have it be reusable on multiple pages to display different gallery types.
 
+All photo images in the "galleries" folder provided copyright Ben Parks Photography.
+
 A full demonstration is available on https://www.benparksphotography.com
 
 TODOs:
