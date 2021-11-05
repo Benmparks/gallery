@@ -1,0 +1,299 @@
+.container {
+	width: 100%;
+	max-width: unset;
+	padding: 0;
+	position: relative;
+}
+
+header {
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 1rem;
+	background-image: linear-gradient(#ddd 0%, #fff 15%);
+	position: relative	;
+	top: 0;
+}
+
+header nav {
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+header .social {
+	width: 20%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+header a, header a:hover, header a:active {
+	color: #666;
+	font-size: 1.25rem;
+}
+
+header a {
+    margin-right: 1rem;   
+}
+
+header a.active {
+	font-weight: bold;
+}
+
+.float-cont {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex !important;	
+	width: 100%;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+.float-cont a {
+	width: 32.5vw;
+	height: 32.5vw;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+}
+.float-cont a img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 100%;
+	width: auto;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.float-cont a.portrait img {
+	width: 100%;
+  	height: auto;
+  	-webkit-transform: translate(-50%,-40%);
+	-ms-transform: translate(-50%,-40%);
+	transform: translate(-50%,-40%);
+}
+
+#gallery .float-cont {
+	display: none;
+}
+
+.pull-left {
+	float: left;
+}
+
+.about, .headshot {
+	margin: 0 1em;
+	max-width: 90%;
+}
+
+.booking {
+	padding: 0 2em;
+}
+
+p {
+	color: #A9A9A9;
+	font-size: 16px;
+	padding: 0 20px;
+}
+
+h1 {
+	text-align: center;
+	color: #666;
+}
+
+/*Menu Dropdown*/
+
+/* Dropdown Button */
+.dropbtn {
+  color: #666;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  font-size: 1.25rem;
+}
+
+.dropbtn i {
+	position: absolute;
+	right: -1em;
+	top: 0
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background: #ccc;
+  font-size: .8rem;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #ddd;
+	font-size: .8rem;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/*Spinner for Galleries*/
+
+.lds-dual-ring {
+  position: absolute;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #666;
+  border-color: #666 transparent #666 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+	.float-cont a {
+		width: 45vw;
+		height: 45vw;
+	}
+	
+	header {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	header nav {
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 1rem 0;
+	}
+	
+	header nav a {
+		display: inline-block;
+		padding: 0 .25rem;	
+	}
+	
+	.float-cont {
+	    justify-content: center;
+	}
+	
+	header .social {
+		width: 100%;
+		margin-top: 15px;
+	}
+	
+	p {
+		padding: 0 10px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.float-cont a {
+		width: 99vw;
+		height: 99vw;
+		overflow: hidden;
+		display: inline-block;
+		position: relative;
+	}
+}
+
+/*Introduction page CSS*/
+
+#headshot img {
+	width: auto;
+	height: auto;
+	margin: auto;
+	max-width: 100%;
+	display: block;
+}
+
+.introduction {
+	padding: 20px 0 0;
+}
+
+.introduction p {
+	color: #333;
+	font-size: 14px;
+}
+
+h2, h3 {
+	filter: drop-shadow(2px 2px 1px #aaa);
+}
+
+h3 {
+	font-size: 24px;
+}
+
+.front-end-dev, .photography, .videography, .other {
+	padding: 15px 15px 0;
+	margin: 15px 0 0;
+	height: 100%;
+	filter: drop-shadow(7px 5px 4px #aaa);
+}
+
+.front-end-dev {
+	background: #0ccfed;
+}
+
+.photography {
+	background: #7dffa4;
+}
+
+.videography {
+	background: #c2b0ff;
+}
+
+.other {
+	background: #ffde73;
+}
+
+.secondary-row {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	clear: both;
+}
+
+#design .float-cont a {
+    width: 30%;
+    height: 200px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+}
