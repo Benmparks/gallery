@@ -12,24 +12,27 @@ How to use:
 - Create a new folder in the "galleries" directory and add your images
 - Within your HTML file make sure you include the following snippet somewhere on the page.  This is where your gallery will load:
 
+```html
 <div class="row no-gutters content">
-    <div class="col-sm-12" id="gallery">
-        <div class="lds-dual-ring"></div>
-            <div class="float-cont">
-                    	
-            </div>
-         </div>
-    </div>
+	<div class="col-sm-12" id="gallery">
+		<div class="lds-dual-ring"></div>
+			<div class="float-cont">
+                    	</div>
+		</div>
+	</div>
 </div>
+```
 
 - At the bottom of your HTML file after loading gallery.js and JQuery call the gallery loader with "name" replaced with the name of the folder you want to 
 target in the "galleries" directory.  You will need to keep the quotes around the value you want to pass.
 
+```javascript
 <script type="text/javascript">
-		$(document).ready(function() {
-			buildGallery("name");		
-		});
+	$(document).ready(function() {
+		buildGallery("name");		
+	});
 </script>
+```
 
 A full demonstration is available on https://www.benparksphotography.com
 
